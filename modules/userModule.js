@@ -51,7 +51,7 @@ exports.loginUser = async(req,res,next) =>{
         res.cookie('userToken',authToken,{
             expires: new Date(new Date().getTime() + 360 * 1000),
             sameSite:'none',
-            secure:false,
+            secure:true,
             httpOnly: true
         });
 
