@@ -21,7 +21,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(cors({ origin:'https://kd-todo-notes.netlify.app/', credentials: true }));
+app.use(cors({ origin:'https://kd-todo-notes.netlify.app', credentials: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
